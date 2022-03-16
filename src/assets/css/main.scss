@@ -1,0 +1,124 @@
+.wrapper-auth {
+    background-color: #f7f7f7;
+    height: auto;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/WhatsApp Image 2022-02-12 at 6.52.03 PM.jpeg");
+    @media (max-width: 991px) {
+        background-image: none;
+    }
+    .wrapper-form {
+        .form-start {
+            color: #ccc;
+            font-size: 16px;
+        }
+        .nav-tabs {
+            &>.nav-item {
+                border-bottom: 1px solid #222;
+            }
+            .nav-link {
+                background-color: transparent;
+                color: #222;
+            }
+            .nav-link.active {
+                color: #00a89b;
+            }
+        }
+    }
+}
+
+.sign-up {
+    padding: 20px 40px;
+}
+
+.form-group,
+.form-floating {
+    position: relative;
+    margin: 35px 0 10px 0;
+    overflow: hidden;
+    label {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        color: #222;
+    }
+    input:not([type="checkbox"]) {
+        width: 100%;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #999;
+        padding: 6px 30px;
+        box-sizing: border-box;
+        background-color: transparent;
+        &:focus,
+        &:active {
+            outline: none;
+            border-bottom: 1px solid #999;
+        }
+    }
+    input.form-submit {
+        display: inline-block;
+        background: #00a89b;
+        color: #fff;
+        border-bottom: none;
+        width: auto;
+        padding: 15px 39px;
+        border-radius: 30px;
+        margin-top: 25px;
+        cursor: pointer;
+        width: 200px;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.container-actions {
+    margin: 35px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form-check {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 5px;
+        margin: 0;
+        input {
+            accent-color: #00a89b;
+            color: white;
+        }
+        label {
+            color: rgb(107, 101, 101);
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .forget-pass {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        p {
+            color: #00a89b;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+}
+
+.haveAccount {
+    margin-top: 20px;
+    font-size: 15px;
+    span {
+        font-weight: bold;
+        color: #00a89b;
+        cursor: pointer;
+    }
+}
